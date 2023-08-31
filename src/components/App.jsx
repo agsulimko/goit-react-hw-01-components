@@ -38,7 +38,7 @@ export const App = () => {
           
 <FriendList friends={friends}/>
       
-      <TransactionsHistory items={transactions} />omework template
+      <TransactionsHistory items={transactions} />
     </div>
   );
 };
