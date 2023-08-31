@@ -1,3 +1,4 @@
+import React from 'react';
 import { Profile } from 'components/Profile/Profile';
 import { FriendList } from 'components/Friends/FriendList/FriendList';
 // import { FriendListItem } from 'components/Friends/FriendListItem/FriendListItem';

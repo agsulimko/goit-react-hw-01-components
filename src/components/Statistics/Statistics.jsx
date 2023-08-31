@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
-// import { createRGB} from '../../utils/createRGB';
+ import { createRGB} from '../../utils/createRGB';
 
 
 export const Statistics = (props) => {
@@ -20,7 +20,7 @@ export const Statistics = (props) => {
 
             <ul className={css.list}>
                 {stats.map((item) => (
-                    <li className={css.item} key={item.id} >
+                    <li style={{backgroundColor: createRGB()}} className={css.item} key={item.id} >
                     
                         <span className={css.label}>{item.label}</span>
                         <span className={css.percentage}>{item.percentage}%</span>
