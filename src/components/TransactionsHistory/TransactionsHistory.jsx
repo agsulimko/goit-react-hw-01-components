@@ -2,8 +2,13 @@
 // ======================1 Variant=================
 import PropTypes from 'prop-types';
 import css from './TransactionsHistory.module.css';
+
+// import   { createGreyWhite } from '../../utils/createGreyWhite.js';
+function createGreyWhite(index) {
+  return index % 2 === 0 ? 'white' : 'rgb(227, 230, 238)';
+}
 export const TransactionsHistory = (props) => {
-    const { items } = props;
+    const { items, index } = props;
 
 console.log(props);
 return (
@@ -17,14 +22,19 @@ return (
   </thead>
 
     <tbody>
-      {items.map((item) => (
+      {items.map((item, index) => {
+        return (
       
-    <tr  key={item.id}>
-      <td className={css.type}>{item.type}</td>
-      <td className={css.amount}>{item.amount}</td>
-      <td className={css.currency}>{item.currency}</td>
-      </tr>
-      ))}
+          <tr style={{ backgroundColor: createGreyWhite(index) }} key={item.id} index={index}>
+            <td className={css.type}>{item.type}</td>
+            <td className={css.amount}>{item.amount}</td>
+            <td className={css.currency}>{item.currency}
+       
+            </td>
+          </tr>
+        )
+      }
+    )}
     {/* <tr>
       <td>Withdrawal</td>
       <td>85</td>
