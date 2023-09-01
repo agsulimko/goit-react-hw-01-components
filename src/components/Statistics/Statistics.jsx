@@ -7,7 +7,7 @@ import css from './Statistics.module.css';
 
 export const Statistics = (props) => {
   
-     const { title, stats, percentage, label, id } = props;
+     const { title, stats } = props;
 //    Upload stats
      console.log(props);
     // console.log(title);

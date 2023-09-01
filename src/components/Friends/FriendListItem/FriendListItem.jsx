@@ -4,7 +4,7 @@ import css from './FriendListItem.module.css';
 
 
 export const FriendListItem = (props) => {
-  const { avatar, name, isOnline, id } = props;
+  const { avatar, name, isOnline } = props;
   //  const { friends } = props;
   console.log(css);
    console.log(css[isOnline]);

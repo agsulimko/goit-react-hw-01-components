@@ -3,12 +3,12 @@
 import PropTypes from 'prop-types';
 import css from './TransactionsHistory.module.css';
 
-// import   { createGreyWhite } from '../../utils/createGreyWhite.js';
+
 function createGreyWhite(index) {
   return index % 2 === 0 ? 'white' : 'rgb(227, 230, 238)';
 }
 export const TransactionsHistory = (props) => {
-    const { items, index } = props;
+    const { items } = props;
 
 console.log(props);
 return (
