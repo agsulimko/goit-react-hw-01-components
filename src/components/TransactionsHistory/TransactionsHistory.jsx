@@ -1,8 +1,5 @@
-
-// ======================1 Variant=================
 import PropTypes from 'prop-types';
 import css from './TransactionsHistory.module.css';
-
 
 function createGreyWhite(index) {
   return index % 2 === 0 ? 'white' : 'rgb(227, 230, 238)';
